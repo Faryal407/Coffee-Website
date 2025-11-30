@@ -1,0 +1,39 @@
+#header{
+    background-image: url(./images/hero\ page.jpg);
+    background-size: cover;
+}
+
+#menuBtn{
+    background-color: #A0583C;
+}
+#menuBtn:hover{
+    background-color: #FFFADA;
+    color: #A0583C;
+}
+
+#orderBtn{
+    background-color: #A0583C;
+}
+#orderBtn:hover{
+    background-color:#FFFADA;
+    color: #A0583C;
+}
+#modeBtn{
+     background-color: #A0583C;
+}
+#modeBtn:hover{
+    background-color:#FFFADA;
+    color: #A0583C;
+}
+#card{
+    background-color: #C08267;
+}
+h3{
+    color: #A0583C;
+}
+#footer{
+     background-color: #A0583C;
+}
+#footer:hover{
+     background-color: #C08267;
+}

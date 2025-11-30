@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Coffee Website</title>
+ <!-- Tailwind CDN Correct -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <!-- Header Section --> 
+<header id="header" class="fixed top-0 l-0 body-font w-full">
+  <nav id="navbar">
+  <div class="container w-full mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border-white border-b-2 ">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <span class="ml-3 text-xl">
+         <h1 class="text-3xl font-bold text-white ">Coffee Haven</h1>
+      </span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center font-semibold">
+      <a class="mr-5 text-white hover:text-red-300 " href="index.html">Home</a>
+      <a class="mr-5 text-white hover:text-red-300" href="#explore">Explore Us</a>
+      <a class="mr-5 text-white hover:text-red-300 " href="#brands">Brands</a>
+      <a class="mr-5 text-white hover:text-red-300" href="#contact">Contact</a>
+    </nav>
+     <button id="menuBtn" class="inline-flex text-white items-center px-8 py-2 w-30 mr-3 rounded-full hover:bg-red-30 
+    text-bold border-0 focus:outline-none rounded text-center mt-4 md:mt-0">
+    <a href="#contact">  Sign Up</a>
+    </button>
+  </div>
+</nav>
+</header>
+
+        <!-- hero section -->
+        
+        <div id="header" class="py-20">
+            <div class="container mx-auto px-4 text-white text-center mt-40">
+                <h2 class="text-4xl font-bold text-brown-800 mb-4">Power Up with Coffee</h2>
+                <p class="text-brown-700 text-lg mb-8">Start your Exiting Day with a cup of Brew Coffee!</p>
+               <button id="modeBtn" class="text-white px-6 py-3 w-50 rounded-full hover:bg-red-400">
+                 <a href="#">
+                  Light / Dark Mode
+                 </a></button>
+            </div>
+        </div>
+       
+        <h1 id="explore" class="border-b-4 border-red-400 text-3xl p-3 font-bold text-center mb-8 mt-8 text-red-700">Explore the Coffee World!</h1>
+
+        <!-- next section -->
+        <section   class="container mx-auto px-4 mb-20 md-px-4">
+            <div class="grid lg-grid-cols-1 md:grid-cols-4 gap-6 text-white text-center">
+                <!-- Card 1 -->
+                 <div id="card" class="card pr-6 rounded-xl  shadow overflow-hidden
+                  hover:scale-105 transition-transform duration-300">
+                    <img src="./images/cappicino.jpg" alt="Cappicino" class="rounded-xl w-50 h-48 ml-3 mt-5 md-pr-2 object-cover 
+                w-90 hover:scale-105 transition-transform duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 ">Cappicino</h3>
+                        <p>Experience the rich flavors of our signature cappuccino blend.
+                            <br>
+                        $8.60 </p>
+                        <button id="orderBtn" .onclick(orderBtn) class="text-white px-4 py-2 w-30 rounded-full hover:bg-red-700 mt-2">
+                         <a href="#">Order Now</a></button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div id="card" class="card pr-6 rounded-xl shadow overflow-hidden
+                  hover:scale-105 transition-transform duration-300">
+                    <img src="./images/mocha.jpg" alt="mocha" class="rounded-xl w-50 h-48 ml-3 mt-5 md-pr-8 object-cover md-w-70
+                    w-90 hover:scale-105 transition-transform duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Mocha</h3>
+                        <p>Indulge in the creamy goodness of cappuccino, topped with frothy milk.
+                            <br>
+                         $9.20</p>
+                        <button id="orderBtn" class="text-white px-4 py-2 w-30 rounded-full hover:bg-red-700 mt-2">
+                         <a href="#">Order Now</a></button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div id="card" class="card pr-6 rounded-xl shadow overflow-hidden 
+                  hover:scale-105 transition-transform duration-300">
+                    <img src="./images/latte.jpg" alt="Latte" class="rounded-xl w-50 h-48 ml-3 mt-5 md-pr-8 object-cover md-w-70 
+                     w-90 hover:scale-105 transition-transform duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Latte</h3>
+                        <p>Savor the smooth and velvety taste of our expertly crafted latte.</p>
+                        <br>
+                         $11.40</p>
+                        <button id="orderBtn" class="text-white px-4 py-2 w-30 rounded-full hover:bg-red-700 mt-2">
+                         <a href="#">Order Now</a></button>
+                    </div>
+                </div>
+                 <!-- Card 4 -->
+                <div id="card" class="card pr-6 rounded-xl shadow overflow-hidden md-px-8
+                  hover:scale-105 transition-transform duration-300">
+                    <img src="./images/cold java.jpg" alt="Cold java" class="rounded-xl w-50 h-48 ml-3 mt-5 md-pr-8 object-cover md-w-70
+                      w-90 hover:scale-105 transition-transform duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Cold Java</h3>
+                        <p>Enjoy the refreshing and invigorating flavors of our cold brew coffee.</p>
+                        <br>
+                        $6.40</p>
+                        <button id="orderBtn" class="text-white px-4 py-2 w-30 rounded-full hover:bg-red-700 mt-2">
+                         <a href="#">Order Now</a></button>
+                    </div>
+                </div>
+
+            </div>  
+        </section>
+
+       <h1 id="brands" class="border-b-4 border-red-400 text-3xl p-3 font-bold text-center mb-8 mt-8 text-red-700">
+        Brands we Work with!</h1>
+
+         <!-- brands section -->
+            <section class="container mx-auto px-4 mb-20 md-px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white text-center">
+                    <!-- Brand 1 -->
+                    <div class="card pr-6 rounded-xl shadow overflow-hidden  hover:scale-105 transition-transform duration-300">
+                        <img src="./images/Stackbuks logo.png" alt="Starbucks" class="rounded-xl w-90 h-48 ml-3 mt-5 md-pr-2 object-cover md-py-5
+                     w-80   hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- Brand 2 -->
+                    <div class="card pr-8 ml-6 rounded-xl shadow overflow-hidden w-70  hover:scale-105 transition-transform duration-300">
+                        <img src="./images/Nescafe.jpeg" alt="Nescafe" class="rounded-xl
+                    h-40 ml-3 mt-5 object-cover md-w-80
+                        hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <!-- Brand 3 -->
+                    <div class="card pr-6 rounded-xl shadow px-9 overflow-hidden w-60 hover:scale-105 transition-transform duration-300">
+                        <img src="./images/Tim hortins.png" alt="tim hortins" class="rounded-xl w-70  h-48 ml-5 mt-5 object-cover
+                         md-w-70  hover:scale-105 transition-transform duration-300">
+                    </div>
+                     <!-- Brand 4 -->
+                    <div class="card pr-6 rounded-xl shadow overflow-hidden mx-9 hover:scale-105 transition-transform duration-300">
+                        <img src="./images/Dunkin Donuts.png" alt="Dunkin donuts" class="rounded-xl w-80 h-60 ml-3 mt-5 mr-3 object-cover lg-w-70
+                         hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </section>
+
+             <h1 class="border-b-4 border-red-400 text-3xl p-3 font-bold text-center mb-8 mt-8 text-red-700">
+        Get in Touch with Us!</h1>
+
+         <!-- contact section -->
+
+        <section id="contact" class="container mx-auto px-4 mb-20 md-px-4">
+            <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+                <form class=" hover:scale-105 transition-transform duration-300" 
+                 action="https://formsubmit.co/faryal77779@gmail.com" method="POST">
+                    <div class="mb-4 ">
+                        <label class="block text-red-800 font-semibold mb-2" for="name">Name</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400" type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-red-800 font-semibold mb-2" for="email">Email</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400" type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-red-800 font-semibold mb-2" for="message">Message</label>
+                        <textarea class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="bg-red-700 text-white px-4 py-2 rounded-full hover:bg-red-400" type="submit">
+                      <a href="#"> Send Message</a>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer id="footer" class=" body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center">
+      <span class="ml-3 text-xl text-white">Coffee Haven</span> 
+    </a>
+    <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-red-800 sm:py-2 sm:mt-0 mt-4">© 2024 Coffee Haven —
+      <a href="https://twitter.com/knyttneve" class="text-white ml-1" target="_blank" rel="noopener noreferrer">@coffeehaven</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-white" href="https://www.facebook.com/">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-white" href="https://twitter.com/">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-white" href="https://www.instagram.com/">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+    </span>
+    </div>
+</footer>
+
+        
+ <script src="script.js"></script>              
+</body>
+</html>
