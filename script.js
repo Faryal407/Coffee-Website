@@ -12,9 +12,17 @@ let orderBtns = document.querySelectorAll("#orderBtn");
 
 orderBtns.forEach(btn => {
   btn.addEventListener("click", () => {
-    alert("Your order has been added! ☕");
+  swal.fire({
+        icon: "success",
+        title: "Order Success",
+        text: "Your Order has been added! ☕",
+       confirmButtonColor: '#A0583C',
+        timer: 2500,
+        timerProgressBar: true
+  });
   });
 });
+
 
 // Navbar Shadow on Scroll
 const navbar = document.getElementById("navbar");
