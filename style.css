@@ -3,10 +3,10 @@
     background-size: cover;
 }
 
-#menuBtn{
+#button{
     background-color: #A0583C;
 }
-#menuBtn:hover{
+#button:hover{
     background-color: #FFFADA;
     color: #A0583C;
 }
