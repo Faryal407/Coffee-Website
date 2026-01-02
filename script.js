@@ -36,11 +36,40 @@ window.addEventListener("scroll", () => {
 });
 
 
-
-
 // Dark / Light Mode Toggle (Optional)
 
-let modeBtn = document.querySelector("#modeBtn");
-        modeBtn.addEventListener("click", () => {
-            document.body.style.backgroundColor = "lightpink"; // Dark background
-        });
+       let modeBtn = document.getElementById('modeBtn');//target html btn
+       let isDarkMode = false;
+
+       modeBtn.addEventListener("click" , () => {
+        if(isDarkMode){
+    // switch to light Mode
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "Black";
+    }
+    else {
+    //switch to Dark Mode
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+}   isDarkMode = !isDarkMode;
+})
+
+        //form fill
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // prevent page reload
+  // Show SweetAlert2 popup
+  alert("Message Sent Successfully!");
+  
+  // Swal.fire({
+  //   icon: 'success',
+  //   title: 'Message Sent!',
+  //   text: '✅ Your message has been sent successfully!',
+  //   confirmButtonColor: '#ec4899', // pink to match your theme
+  //   timer: 2500,
+  //   timerProgressBar: true
+  // });
+
+  contactForm.reset(); // reset form fields
+ });
